@@ -7,9 +7,9 @@ sys.path.append('..')
 
 from torch.multiprocessing import spawn
 
-GPUs = '0,1,2,3'
-cfg_file = '20News_Fine.yaml'
-visdom_env_name = '20New_Fine'
+GPUs = '0,1'
+cfg_file = 'NYT_5.yaml'
+visdom_env_name = 'NYT_5'
 
 os.environ['CUDA_VISIBLE_DEVICES'] = GPUs
 
