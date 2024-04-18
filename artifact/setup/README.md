@@ -14,10 +14,18 @@ Instructions for creating or organizing the artifacts of a given project.
 ### Docker
 ```bash
 
-docker build -t ${PROJECT_NAME}_image -f artifact/setup/dockerfile .
+docker build -t rep-classkg_image -f artifact/setup/dockerfile .
 
 
-docker run --rm --ipc=host --gpus all -v ${PWD}:/workspace -it ${PROJECT_NAME}_image bash
+
+
+```
+
+### Useful tools
+
+```bash
+docker save --output rep-classkg_image.tar rep-classkg_image
+split -b 5G rep-classkg_image.tar rep-classkg_image-part-
 
 # inside the container, run the required commands
 

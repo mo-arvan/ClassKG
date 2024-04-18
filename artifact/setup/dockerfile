@@ -1,4 +1,4 @@
-from nvcr.io/nvidia/pytorch:22.02-py3
+from nvcr.io/nvidia/dgl:23.07-py3
 
 COPY artifact/setup/requirements.txt /opt/app/requirements.txt
 
