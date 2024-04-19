@@ -1,5 +1,5 @@
 yacs
-visdom
+visdom==0.2.3
 transformers
 scikit-learn
 numpy
